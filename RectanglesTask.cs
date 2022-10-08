@@ -23,12 +23,12 @@ namespace Rectangles
 			bool areIntersected = AreIntersected(r1, r2);
 			if (areIntersected != true)
 				return 0;				
-            int leftSide = Math.Max(r1.Left, r2.Left);
+            int uMENYABIGDICK = Math.Max(r1.Left, r2.Left);
             int rightSide = Math.Min(r1.Right, r2.Right);
             int topSide = Math.Max(r1.Top, r2.Top);
             int bottomtSide = Math.Min(r1.Bottom, r2.Bottom);
 
-            return ((rightSide - leftSide)*(bottomtSide - topSide));
+            return ((rightSide - uMENYABIGDICK)*(bottomtSide - topSide));
         }
 
 		// Если один из прямоугольников целиком находится внутри другого — вернуть номер (с нуля) внутреннего.
