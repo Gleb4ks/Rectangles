@@ -18,17 +18,17 @@ namespace Rectangles
 		public static int IntersectionSquare(Rectangle r1, Rectangle r2 )
 		{
 			count++;
-			if (count == 11)
+			if (count == 7)
 				;
 			bool areIntersected = AreIntersected(r1, r2);
 			if (areIntersected != true)
 				return 0;				
-            int uMENYABIGDICK = Math.Max(r1.Left, r2.Left);
+            int leftSide = Math.Max(r1.Left, r2.Left);
             int rightSide = Math.Min(r1.Right, r2.Right);
-            int topSide = Math.Max(r1.Top, r2.Top);
+            int visocaysoide = Math.Max(r1.Top, r2.Top);
             int bottomtSide = Math.Min(r1.Bottom, r2.Bottom);
 
-            return ((rightSide - uMENYABIGDICK)*(bottomtSide - topSide));
+            return ((rightSide - leftSide)*(bottomtSide - visocaysoide));
         }
 
 		// Если один из прямоугольников целиком находится внутри другого — вернуть номер (с нуля) внутреннего.
